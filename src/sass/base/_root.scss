@@ -1,0 +1,9 @@
+@use 'font' as *;
+
+:root {
+  @each $key, $value in $font-size {
+    @each $key, $value in $value {
+        --#{$key}: #{$value};
+    }
+}
+}
